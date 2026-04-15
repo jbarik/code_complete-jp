@@ -248,7 +248,10 @@ endfunction
 
 " [Get converted file name like __THIS_FILE__ ]
 function! GetFileName()
+    let foldername=expand("%:p")
+    let foldername=fnamemodify(foldername, ":h:t")
     let filename=expand("%:t")
+    let filename=foldername. "__" . filename
     let filename=toupper(filename)
     let _name=substitute(filename,'\.','_',"g")
     "let _name="__"._name."__"
