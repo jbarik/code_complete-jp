@@ -284,6 +284,7 @@ let g:template['c']['if'] = "if( ".g:rs."...".g:re." )\<cr>{\<cr>".g:rs."...".g:
 let g:template['c']['while'] = "while( ".g:rs."...".g:re." )\<cr>{\<cr>".g:rs."...".g:re."\<cr>}"
 let g:template['c']['ife'] = "if( ".g:rs."...".g:re." )\<cr>{\<cr>".g:rs."...".g:re."\<cr>} else\<cr>{\<cr>".g:rs."...".
             \g:re."\<cr>}"
+let g:template['c']['cr'] = "% Copyright " .strftime("%Y"). " The Mathworks, Inc."
 
 " ---------------------------------------------
 " C++ templates
